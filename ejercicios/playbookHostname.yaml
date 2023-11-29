@@ -1,0 +1,6 @@
+---
+- name: test execute hostname
+  hosts: localhost
+  tasks:
+    - name: get hostname
+      ansible.builtin.command: hostname
