@@ -3,10 +3,10 @@
   hosts: servera
   become: yes
   tasks:
-    - name: latest version of httpd and firewalld installed
+    - name: latest version of apache2 and firewalld installed
       yum:
         name:
-          - httpd
+          - apache2
           - firewalld
         state: latest
 
@@ -21,16 +21,16 @@
         enabled: true
         state: started
 
-    - name: firewalld permits access to httpd service
+    - name: firewalld permits access to apache2 service
       firewalld:
         service: http
         permanent: true
         state: enabled
         immediate: yes
 
-    - name: httpd enabled and running
+    - name: apache2 enabled and running
       service:
-        name: httpd
+        name: apache2
         enabled: true
         state: started
 
