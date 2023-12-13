@@ -12,7 +12,7 @@
 
     - name: test html page is installed
       copy:
-        content: "Welcome to the example.com intranet!\n"
+        content: "Bienvenidos al curso de ansible!\n"
         dest: /var/www/html/index.html
 
     - name: firewalld enabled and running
