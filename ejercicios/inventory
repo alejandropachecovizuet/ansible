@@ -1,0 +1,6 @@
+[admin]
+servera ansible_host=35.232.146.231 ansible_user=apacheco ansible_password=ansible ansible_sudo_pass=ansible 
+[dev]
+serverb
+[db]
+serverc

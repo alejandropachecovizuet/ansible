@@ -1,6 +1,6 @@
 ---
 - name: Enable intranet services
-  hosts: curso-ansible01.com.mx
+  hosts: servera
   become: yes
   tasks:
     - name: latest version of httpd and firewalld installed
